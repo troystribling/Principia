@@ -10,33 +10,33 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     61878,       1071]
-NotebookOptionsPosition[     61371,       1049]
-NotebookOutlinePosition[     61792,       1066]
-CellTagsIndexPosition[     61749,       1063]
+NotebookDataLength[     61800,       1067]
+NotebookOptionsPosition[     61295,       1045]
+NotebookOutlinePosition[     61715,       1062]
+CellTagsIndexPosition[     61672,       1059]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell["Single Pendulum", "Subtitle",
+Cell[TextData[StyleBox["Single Pendulum", "Title"]], "Subtitle",
  CellChangeTimes->{{3.618175848467143*^9, 3.618175856038227*^9}, {
    3.618192007725711*^9, 3.6181920163353786`*^9}, {3.618228530144002*^9, 
    3.6182285303536263`*^9}, 3.618347254824213*^9, 3.618518227866674*^9, 
    3.6185182933771677`*^9, {3.618518532484332*^9, 3.618518539272668*^9}, {
    3.618518962032683*^9, 3.618518962727292*^9}, {3.6185190110368223`*^9, 
-   3.618519027750619*^9}}],
+   3.618519027750619*^9}, 3.6187114835691566`*^9}],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{
    RowBox[{"SinglePendulum", "[", 
-    RowBox[{"w_", ",", " ", "v0_", ",", " ", "tmax_"}], "]"}], " ", ":=", " ", 
+    RowBox[{"w_", ",", " ", "v0_", ",", " ", "t_"}], "]"}], " ", ":=", " ", 
    RowBox[{"Module", "[", 
     RowBox[{
      RowBox[{"{", 
-      RowBox[{"s", ",", " ", "y", ",", "t"}], "}"}], ",", 
+      RowBox[{"s", ",", " ", "y", ",", " ", "x"}], "}"}], ",", 
      "\[IndentingNewLine]", 
      RowBox[{
       RowBox[{"s", " ", "=", " ", 
@@ -47,10 +47,10 @@ Cell[BoxData[
            RowBox[{
             RowBox[{
              RowBox[{"Sin", "[", 
-              RowBox[{"y", "[", "t", "]"}], "]"}], "+", " ", 
+              RowBox[{"y", "[", "x", "]"}], "]"}], "+", " ", 
              RowBox[{"w", " ", 
               RowBox[{
-               RowBox[{"y", "''"}], "[", "t", "]"}]}]}], "\[Equal]", "0"}], 
+               RowBox[{"y", "''"}], "[", "x", "]"}]}]}], "\[Equal]", "0"}], 
            ",", " ", 
            RowBox[{
             RowBox[{"y", "[", "0", "]"}], "\[Equal]", "0"}], ",", " ", 
@@ -59,13 +59,16 @@ Cell[BoxData[
              RowBox[{"y", "'"}], "[", "0", "]"}], "\[Equal]", " ", "v0"}]}], 
           "}"}], ",", " ", "y", ",", " ", 
          RowBox[{"{", 
-          RowBox[{"t", ",", " ", "0", ",", " ", "tmax"}], "}"}]}], "]"}]}], 
-      ";", "\[IndentingNewLine]", 
-      RowBox[{"Function", "[", 
-       RowBox[{"t", ",", " ", 
+          RowBox[{"x", ",", " ", "0", ",", " ", "t"}], "}"}]}], "]"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Plot", "[", 
+       RowBox[{
         RowBox[{
-         RowBox[{"y", "[", "t", "]"}], " ", "/.", " ", "s"}]}], "]"}]}]}], 
-    "]"}]}], "\[IndentingNewLine]"}]], "Input",
+         RowBox[{"y", "[", "x", "]"}], " ", "/.", " ", "s"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"x", ",", "0", ",", "200"}], "}"}], ",", 
+        RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]}]}], "]"}]}], 
+  "\[IndentingNewLine]"}]], "Input",
  CellChangeTimes->{{3.6180170953646173`*^9, 3.618017141107176*^9}, {
    3.618017452489628*^9, 3.61801753237286*^9}, {3.618018032670829*^9, 
    3.618018040278664*^9}, {3.618018117081396*^9, 3.618018141118362*^9}, {
@@ -113,23 +116,17 @@ Cell[BoxData[
    3.618523201438485*^9, 3.618523212182178*^9}, {3.618523715763351*^9, 
    3.618523721545813*^9}, {3.6185344212742033`*^9, 3.618534448960062*^9}, {
    3.6185346896728888`*^9, 3.6185346949158297`*^9}, {3.61853552274091*^9, 
-   3.6185355325385437`*^9}, 3.6185355791714687`*^9}],
+   3.6185355325385437`*^9}, 3.6185355791714687`*^9, {3.618710413929295*^9, 
+   3.618710444534213*^9}, {3.618710577787516*^9, 3.618710580607559*^9}, {
+   3.618710764505288*^9, 3.618710767335642*^9}, {3.618741891650676*^9, 
+   3.618741930363152*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Plot", "[", 
-  RowBox[{
-   RowBox[{
-    RowBox[{"SinglePendulum", "[", 
-     RowBox[{"1", ",", " ", "1.9999999", ",", "200"}], "]"}], "[", "x", "]"}],
-    ",", 
-   RowBox[{"{", 
-    RowBox[{"x", ",", "0", ",", "200"}], "}"}], ",", 
-   RowBox[{"PlotRange", "\[Rule]", "All"}]}], "]"}]], "Input",
- CellChangeTimes->{{3.6185234783757257`*^9, 3.618523482662594*^9}, {
-  3.6185235317743177`*^9, 3.6185235321360407`*^9}, {3.618523607239727*^9, 
-  3.618523610858127*^9}, {3.6185355495176697`*^9, 3.618535559556985*^9}}],
+ RowBox[{"SinglePendulum", "[", 
+  RowBox[{"1.0", ",", " ", "1.9999999", ",", " ", "200"}], "]"}]], "Input",
+ CellChangeTimes->{{3.6187420291632013`*^9, 3.618742056527246*^9}}],
 
 Cell[BoxData[
  GraphicsBox[{{}, {}, 
@@ -1042,13 +1039,12 @@ IwD5BSf+LSxQcPDi4rL9LQLwP5bHB8s=
      Scaled[0.02], 
      Scaled[0.02]}},
   Ticks->{Automatic, Automatic}]], "Output",
- CellChangeTimes->{3.618533874811715*^9, 3.618534438842264*^9, 
-  3.6185345168750677`*^9, 3.618535092228899*^9, 3.618535604418668*^9}]
+ CellChangeTimes->{3.618742058360162*^9}]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{992, 752},
-WindowMargins->{{Automatic, -2314}, {115, Automatic}},
+WindowMargins->{{Automatic, -2041}, {73, Automatic}},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
 2014)",
 StyleDefinitions->FrontEnd`FileName[{"Book"}, "Textbook.nb", 
@@ -1066,11 +1062,11 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 425, 6, 65, "Subtitle"],
-Cell[1008, 30, 4827, 85, 77, "Input"],
+Cell[580, 22, 478, 6, 77, "Subtitle"],
+Cell[1061, 30, 5137, 91, 77, "Input"],
 Cell[CellGroupData[{
-Cell[5860, 119, 536, 12, 29, "Input"],
-Cell[6399, 133, 54944, 912, 232, "Output"]
+Cell[6223, 125, 190, 3, 29, "Input"],
+Cell[6416, 130, 54851, 911, 266, "Output"]
 }, Open  ]]
 }, Open  ]]
 }
