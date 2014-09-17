@@ -10,33 +10,36 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     24091,        585]
-NotebookOptionsPosition[     22999,        541]
-NotebookOutlinePosition[     23358,        557]
-CellTagsIndexPosition[     23315,        554]
+NotebookDataLength[     31855,        759]
+NotebookOptionsPosition[     30645,        711]
+NotebookOutlinePosition[     31003,        727]
+CellTagsIndexPosition[     30960,        724]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell[TextData[StyleBox["Single Pendulum",
+Cell[TextData[StyleBox["Single 2D Pendulum",
  FontColor->RGBColor[1, 0.5, 0]]], "Title",
- CellChangeTimes->{{3.619480004044711*^9, 3.619480010986821*^9}}],
+ CellChangeTimes->{{3.619480004044711*^9, 3.619480010986821*^9}, {
+  3.619910494759737*^9, 3.619910495570051*^9}}],
 
 Cell[BoxData[
  RowBox[{
   RowBox[{"l", " ", "=", " ", "1"}], ";", " ", 
-  RowBox[{"tmax", " ", "=", " ", "40"}], ";", " ", 
+  RowBox[{"tmax", " ", "=", " ", "20"}], ";", " ", 
   RowBox[{"g", " ", "=", " ", "9.8"}], ";", " ", 
   RowBox[{"w", " ", "=", " ", 
    RowBox[{"l", "/", "g"}]}], ";"}]], "Input",
  InitializationCell->True,
- CellChangeTimes->{{3.6196414877487698`*^9, 3.619641488631404*^9}}],
+ CellChangeTimes->{{3.6196414877487698`*^9, 3.619641488631404*^9}, {
+  3.619910799322654*^9, 3.619910799629002*^9}, {3.619911623143305*^9, 
+  3.619911623328664*^9}}],
 
 Cell[BoxData[
  RowBox[{
-  RowBox[{"SinglePendulum", "[", "pDot0_", "]"}], " ", ":=", "   ", 
+  RowBox[{"Single2DPendulum", "[", "pDot0_", "]"}], " ", ":=", "   ", 
   RowBox[{"NDSolve", "[", 
    RowBox[{
     RowBox[{"{", 
@@ -65,7 +68,8 @@ Cell[BoxData[
    3.61964289713448*^9}, 3.6196591895397587`*^9, {3.6196592285809917`*^9, 
    3.61965922903024*^9}, 3.619659743699094*^9, 3.61965978227108*^9, {
    3.619705238886386*^9, 3.619705241712944*^9}, 3.619705296537713*^9, {
-   3.619729209003339*^9, 3.619729214619698*^9}}],
+   3.619729209003339*^9, 3.619729214619698*^9}, {3.619910499381485*^9, 
+   3.619910499978346*^9}}],
 
 Cell[BoxData[
  RowBox[{"pc", " ", ":=", " ", 
@@ -96,7 +100,7 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"{", 
        RowBox[{"sol", " ", "=", " ", 
-        RowBox[{"SinglePendulum", "[", "pDot0", "]"}]}], "}"}], ",", 
+        RowBox[{"Single2DPendulum", "[", "pDot0", "]"}]}], "}"}], ",", 
       "\[IndentingNewLine]", 
       RowBox[{"Plot", "[", 
        RowBox[{
@@ -151,7 +155,7 @@ Cell[BoxData[
    3.6197290748116407`*^9, 3.6197290759194117`*^9}, {3.619729222939416*^9, 
    3.619729232383109*^9}, {3.6197292661734457`*^9, 3.619729267110073*^9}, {
    3.6197311457032137`*^9, 3.619731147871223*^9}, 3.6197312057002487`*^9, {
-   3.619731802865715*^9, 3.619731818702578*^9}}],
+   3.619731802865715*^9, 3.619731818702578*^9}, 3.6199105058411827`*^9}],
 
 Cell[BoxData[
  TagBox[
@@ -163,18 +167,18 @@ Cell[BoxData[
        Hold[$CellContext`pDot0$$], 0, "Initial Angual Velocity"}, 0, 
       6.260989336999411, 0.001}}, Typeset`size$$ = {360., {105., 109.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`pDot0$3178$$ = 0}, 
+    True, $CellContext`pDot0$357324$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`pDot0$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`pDot0$$, $CellContext`pDot0$3178$$, 0]}, 
+        Hold[$CellContext`pDot0$$, $CellContext`pDot0$357324$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
       Module[{$CellContext`sol = \
-$CellContext`SinglePendulum[$CellContext`pDot0$$]}, 
+$CellContext`Single2DPendulum[$CellContext`pDot0$$]}, 
         Plot[
          Evaluate[
           ReplaceAll[
@@ -209,7 +213,8 @@ $CellContext`SinglePendulum[$CellContext`pDot0$$]},
    3.6197290843669167`*^9, 3.619729268106724*^9, 3.619729395541836*^9, 
    3.619729933972945*^9, 3.619731149618305*^9, 3.619731206495242*^9, {
    3.6197318035889473`*^9, 3.619731819219079*^9}, 3.619822734945011*^9, 
-   3.619825789287916*^9, 3.619826037512794*^9}]
+   3.619825789287916*^9, 3.619826037512794*^9, 3.619908192056449*^9, 
+   3.6199105106614923`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -222,7 +227,7 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"{", 
        RowBox[{"sol", " ", "=", " ", 
-        RowBox[{"SinglePendulum", "[", "pDot0", "]"}]}], "}"}], ",", 
+        RowBox[{"Single2DPendulum", "[", "pDot0", "]"}]}], "}"}], ",", 
       "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"path", " ", "=", " ", 
@@ -260,30 +265,31 @@ Cell[BoxData[
        "}"}], ",", "0", ",", " ", 
       RowBox[{"pc", " ", "-", " ", ".0001"}], ",", " ", ".01"}], "}"}]}], 
    "]"}], " "}]], "Input",
- CellChangeTimes->{{3.619731544926282*^9, 3.619731577716176*^9}}],
+ CellChangeTimes->{{3.619731544926282*^9, 3.619731577716176*^9}, 
+   3.6199105153730297`*^9}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`pDot0$$ = 1.06, Typeset`show$$ = True, 
+   DynamicModuleBox[{$CellContext`pDot0$$ = 0, Typeset`show$$ = True, 
     Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`pDot0$$], 0, "Initial Angual Velocity"}, 0, 
       6.260890336999411, 0.01}}, Typeset`size$$ = {360., {176., 180.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`pDot0$3263$$ = 0}, 
+    True, $CellContext`pDot0$357613$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`pDot0$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`pDot0$$, $CellContext`pDot0$3263$$, 0]}, 
+        Hold[$CellContext`pDot0$$, $CellContext`pDot0$357613$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
       Module[{$CellContext`sol = \
-$CellContext`SinglePendulum[$CellContext`pDot0$$]}, $CellContext`path = 
+$CellContext`Single2DPendulum[$CellContext`pDot0$$]}, $CellContext`path = 
          ReplaceAll[{$CellContext`l Sin[
               $CellContext`p[$CellContext`t]], (-$CellContext`l) Cos[
               $CellContext`p[$CellContext`t]]}, $CellContext`sol]; 
@@ -305,7 +311,8 @@ $CellContext`l}}]],
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.619731335474581*^9, 3.619731582944779*^9, 
-  3.619822735295508*^9, 3.619825789779131*^9, 3.619826037831708*^9}]
+  3.619822735295508*^9, 3.619825789779131*^9, 3.619826037831708*^9, 
+  3.6199081923877707`*^9, 3.619910516459077*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -319,13 +326,17 @@ Cell[BoxData[
       RowBox[{"{", 
        RowBox[{
         RowBox[{"sol", " ", "=", " ", 
-         RowBox[{"SinglePendulum", "[", "pDot0", "]"}]}], ",", " ", "u"}], 
-       "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Single2DPendulum", "[", "pDot0", "]"}]}], ",", " ", 
+        RowBox[{"u", " ", "=", " ", "u0"}]}], "}"}], ",", 
+      "\[IndentingNewLine]", 
       RowBox[{
        RowBox[{"pu", " ", "=", "  ", 
         RowBox[{
-         RowBox[{"p", "[", "u", "]"}], " ", "/.", " ", "sol"}]}], ";", 
-       "\[IndentingNewLine]", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"p", "[", "u", "]"}], " ", "/.", " ", "sol"}], ")"}], "[", 
+         
+         RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
        RowBox[{"ListPlot", "[", 
         RowBox[{
          RowBox[{"{", 
@@ -344,16 +355,29 @@ Cell[BoxData[
            RowBox[{
             RowBox[{"{", 
              RowBox[{
-              RowBox[{"-", "l"}], ",", " ", "l"}], "}"}], ",", " ", 
+              RowBox[{
+               RowBox[{"-", "l"}], "-", ".1"}], ",", " ", 
+              RowBox[{"l", "+", ".1"}]}], "}"}], ",", " ", 
             RowBox[{"{", 
              RowBox[{
-              RowBox[{"-", "l"}], ",", " ", "l"}], "}"}]}], "}"}]}]}], 
-        "]"}]}]}], "]"}], ",", "\[IndentingNewLine]", 
+              RowBox[{
+               RowBox[{"-", "l"}], "-", ".1"}], ",", " ", 
+              RowBox[{"l", "+", ".1"}]}], "}"}]}], "}"}]}], ",", " ", 
+         "\[IndentingNewLine]", 
+         RowBox[{"AspectRatio", "\[Rule]", "1"}], ",", " ", 
+         RowBox[{"Joined", "\[Rule]", "True"}], ",", " ", 
+         RowBox[{"Mesh", "\[Rule]", "All"}], ",", " ", 
+         RowBox[{"PlotMarkers", "\[Rule]", 
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<\[FilledCircle]\>\"", ",", " ", "28"}], "]"}]}], ",", 
+         " ", 
+         RowBox[{"PlotStyle", "\[Rule]", "Red"}]}], "]"}]}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
       RowBox[{"{", 
-       RowBox[{"u", ",", " ", "0", ",", " ", "\"\<Time\>\""}], "}"}], ",", 
-      " ", "0", ",", " ", "tmax", ",", " ", "0.1"}], "}"}], ",", 
+       RowBox[{"u0", ",", " ", "0", ",", " ", "\"\<Time\>\""}], "}"}], ",", 
+      " ", "0", ",", " ", "tmax", ",", " ", "0.001"}], "}"}], ",", 
     "\[IndentingNewLine]", 
     RowBox[{"{", 
      RowBox[{
@@ -369,44 +393,54 @@ Cell[BoxData[
    3.619825633546249*^9}, {3.619825678225252*^9, 3.619825710525188*^9}, {
    3.619825803793015*^9, 3.6198258258744707`*^9}, {3.6198258568008327`*^9, 
    3.6198258644967213`*^9}, {3.6198259129820766`*^9, 
-   3.6198260044883127`*^9}, {3.619826064471881*^9, 3.619826064647678*^9}}],
+   3.6198260044883127`*^9}, {3.619826064471881*^9, 3.619826064647678*^9}, {
+   3.6198344365372353`*^9, 3.619834451142432*^9}, {3.619910572963789*^9, 
+   3.619910573867414*^9}, {3.619910607195279*^9, 3.619910612934111*^9}, 
+   3.619910721882965*^9, 3.6199108091419897`*^9, {3.6199109256274137`*^9, 
+   3.61991096274566*^9}, {3.619911071745933*^9, 3.619911080260025*^9}, {
+   3.619911156736554*^9, 3.6199111787082453`*^9}, {3.619911257443519*^9, 
+   3.6199112796492977`*^9}, {3.619911435511125*^9, 3.619911439083578*^9}, {
+   3.619911591437182*^9, 3.6199116124539948`*^9}}],
 
 Cell[BoxData[
  TagBox[
   StyleBox[
-   DynamicModuleBox[{$CellContext`pDot0$$ = 1.09, $CellContext`u$$ = 9.1, 
+   DynamicModuleBox[{$CellContext`pDot0$$ = 0., $CellContext`u0$$ = 0., 
     Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
     Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, Typeset`animvar$$ = 
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
-       Hold[$CellContext`u$$], 0, "Time"}, 0, 40, 0.1}, {{
+       Hold[$CellContext`u0$$], 0, "Time"}, 0, 20, 0.001}, {{
        Hold[$CellContext`pDot0$$], 0, "Initial Angual Velocity"}, 0, 
-      6.260890336999411, 0.01}}, Typeset`size$$ = {360., {110., 115.}}, 
+      6.260890336999411, 0.01}}, Typeset`size$$ = {360., {178., 182.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`u$4674$$ = 0, $CellContext`pDot0$4675$$ = 0}, 
+    True, $CellContext`u0$728079$$ = 0, $CellContext`pDot0$728080$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
-      "Variables" :> {$CellContext`pDot0$$ = 0, $CellContext`u$$ = 0}, 
+      "Variables" :> {$CellContext`pDot0$$ = 0, $CellContext`u0$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`u$$, $CellContext`u$4674$$, 0], 
-        Hold[$CellContext`pDot0$$, $CellContext`pDot0$4675$$, 0]}, 
+        Hold[$CellContext`u0$$, $CellContext`u0$728079$$, 0], 
+        Hold[$CellContext`pDot0$$, $CellContext`pDot0$728080$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
       Module[{$CellContext`sol = \
-$CellContext`SinglePendulum[$CellContext`pDot0$$], $CellContext`u}, \
-$CellContext`pu = ReplaceAll[
-           $CellContext`p[$CellContext`u], $CellContext`sol]; 
+$CellContext`Single2DPendulum[$CellContext`pDot0$$], $CellContext`u = \
+$CellContext`u0$$}, $CellContext`pu = Part[
+           ReplaceAll[
+            $CellContext`p[$CellContext`u], $CellContext`sol], 1]; 
         ListPlot[{{0, 
            0}, {$CellContext`l Sin[$CellContext`pu], (-$CellContext`l) 
             Cos[$CellContext`pu]}}, 
-          PlotRange -> {{-$CellContext`l, $CellContext`l}, {-$CellContext`l, \
-$CellContext`l}}]], 
-      "Specifications" :> {{{$CellContext`u$$, 0, "Time"}, 0, 40, 
-         0.1}, {{$CellContext`pDot0$$, 0, "Initial Angual Velocity"}, 0, 
+          PlotRange -> {{-$CellContext`l - 0.1, $CellContext`l + 
+             0.1}, {-$CellContext`l - 0.1, $CellContext`l + 0.1}}, 
+          AspectRatio -> 1, Joined -> True, Mesh -> All, PlotMarkers -> 
+          Style["\[FilledCircle]", 28], PlotStyle -> Red]], 
+      "Specifications" :> {{{$CellContext`u0$$, 0, "Time"}, 0, 20, 
+         0.001}, {{$CellContext`pDot0$$, 0, "Initial Angual Velocity"}, 0, 
          6.260890336999411, 0.01}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{405., {168., 173.}},
+     ImageSizeCache->{405., {249., 254.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -418,7 +452,12 @@ $CellContext`l}}]],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
   3.619823588492834*^9, 3.619825789928894*^9, 3.619825862636154*^9, {
-   3.6198260379387627`*^9, 3.61982606573468*^9}}]
+   3.6198260379387627`*^9, 3.61982606573468*^9}, 3.6198344535562983`*^9, 
+   3.6199081924856367`*^9, 3.619910574911357*^9, 3.619910613862804*^9, 
+   3.619910723229477*^9, 3.619910810308819*^9, {3.6199109349501038`*^9, 
+   3.619910963674138*^9}, 3.6199110820633287`*^9, 3.619911180526504*^9, 
+   3.61991128334412*^9, 3.619911440164456*^9, {3.619911607301859*^9, 
+   3.6199116349191093`*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -440,7 +479,7 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"{", 
        RowBox[{"sol", " ", "=", " ", 
-        RowBox[{"SinglePendulum", "[", "pDot0", "]"}]}], "}"}], ",", 
+        RowBox[{"Single2DPendulum", "[", "pDot0", "]"}]}], "}"}], ",", 
       "\[IndentingNewLine]", 
       RowBox[{"Plot", "[", 
        RowBox[{
@@ -479,7 +518,8 @@ Cell[BoxData[
   3.619661047249189*^9}, {3.619729163569528*^9, 3.6197291667387*^9}, {
   3.619729280316448*^9, 3.6197292806137657`*^9}, {3.619730118030279*^9, 
   3.6197301262831907`*^9}, {3.619731134984869*^9, 3.619731137551469*^9}, {
-  3.619731216083749*^9, 3.619731245618073*^9}}],
+  3.619731216083749*^9, 3.619731245618073*^9}, {3.619910580123309*^9, 
+  3.619910580467409*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -492,19 +532,19 @@ Cell[BoxData[
        "Initial Angual Velocity"}, 6.260890336999411, 6.261090336999411, 
       1.*^-6}}, Typeset`size$$ = {360., {103., 108.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`pDot0$3395$$ = 0}, 
+    True, $CellContext`pDot0$358801$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`pDot0$$ = 6.260990336999411}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`pDot0$$, $CellContext`pDot0$3395$$, 0]}, 
+        Hold[$CellContext`pDot0$$, $CellContext`pDot0$358801$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
         Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
          Typeset`skipInitDone$$}, "Body" :> 
       Module[{$CellContext`sol = \
-$CellContext`SinglePendulum[$CellContext`pDot0$$]}, 
+$CellContext`Single2DPendulum[$CellContext`pDot0$$]}, 
         Plot[
          Evaluate[
           ReplaceAll[
@@ -534,13 +574,143 @@ $CellContext`SinglePendulum[$CellContext`pDot0$$]},
    3.619729169762826*^9, 3.6197293656786213`*^9, 3.619729395848175*^9, 
    3.619729934302249*^9, 3.6197301294087877`*^9, 3.619731139360104*^9, {
    3.619731216983055*^9, 3.619731246299665*^9}, 3.6198227353997097`*^9, 
-   3.619825790050597*^9, 3.619826038067876*^9}]
+   3.619825790050597*^9, 3.619826038067876*^9, 3.619908192585713*^9, 
+   3.6199105813711033`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"Module", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"sol", " ", "=", " ", 
+         RowBox[{"Single2DPendulum", "[", "pDot0", "]"}]}], ",", " ", 
+        RowBox[{"u", " ", "=", " ", "u0"}]}], "}"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"pu", " ", "=", "  ", 
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"p", "[", "u", "]"}], " ", "/.", " ", "sol"}], ")"}], "[", 
+         
+         RowBox[{"[", "1", "]"}], "]"}]}], ";", "\[IndentingNewLine]", 
+       RowBox[{"ListPlot", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"0", ",", " ", "0"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"l", " ", 
+              RowBox[{"Sin", "[", "pu", "]"}]}], ",", " ", 
+             RowBox[{
+              RowBox[{"-", "l"}], " ", 
+              RowBox[{"Cos", "[", "pu", "]"}]}]}], "}"}]}], "}"}], ",", " ", 
+         RowBox[{"PlotRange", "\[Rule]", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "l"}], "-", ".1"}], ",", " ", 
+              RowBox[{"l", "+", ".1"}]}], "}"}], ",", " ", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"-", "l"}], "-", ".1"}], ",", " ", 
+              RowBox[{"l", "+", ".1"}]}], "}"}]}], "}"}]}], ",", " ", 
+         "\[IndentingNewLine]", 
+         RowBox[{"AspectRatio", "\[Rule]", "1"}], ",", " ", 
+         RowBox[{"Joined", "\[Rule]", "True"}], ",", " ", 
+         RowBox[{"Mesh", "\[Rule]", "All"}], ",", " ", 
+         RowBox[{"PlotMarkers", "\[Rule]", 
+          RowBox[{"Style", "[", 
+           RowBox[{"\"\<\[FilledCircle]\>\"", ",", " ", "28"}], "]"}]}], ",", 
+         " ", 
+         RowBox[{"PlotStyle", "\[Rule]", "Red"}]}], "]"}]}]}], "]"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"u0", ",", " ", "0", ",", " ", "\"\<Time\>\""}], "}"}], ",", 
+      " ", "0", ",", " ", "tmax", ",", " ", "0.001"}], "}"}], ",", 
+    "\[IndentingNewLine]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+       "pDot0", ",", " ", "pc", ",", " ", "\"\<Initial Angual Velocity\>\""}],
+        "}"}], ",", 
+      RowBox[{"pc", " ", "-", " ", ".0001"}], ",", " ", 
+      RowBox[{"pc", " ", "+", " ", ".0001"}], ",", " ", ".000001"}], "}"}]}], 
+   "]"}], " "}]], "Input",
+ CellChangeTimes->{{3.619911784417364*^9, 3.619911811807171*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`pDot0$$ = 
+    6.261090336999411, $CellContext`u0$$ = 14.507, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{{
+       Hold[$CellContext`u0$$], 0, "Time"}, 0, 20, 0.001}, {{
+       Hold[$CellContext`pDot0$$], 6.260990336999411, 
+       "Initial Angual Velocity"}, 6.260890336999411, 6.261090336999411, 
+      1.*^-6}}, Typeset`size$$ = {360., {178., 182.}}, Typeset`update$$ = 0, 
+    Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`u0$768441$$ = 0, $CellContext`pDot0$768442$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`pDot0$$ = 
+        6.260990336999411, $CellContext`u0$$ = 0}, "ControllerVariables" :> {
+        Hold[$CellContext`u0$$, $CellContext`u0$768441$$, 0], 
+        Hold[$CellContext`pDot0$$, $CellContext`pDot0$768442$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`sol = \
+$CellContext`Single2DPendulum[$CellContext`pDot0$$], $CellContext`u = \
+$CellContext`u0$$}, $CellContext`pu = Part[
+           ReplaceAll[
+            $CellContext`p[$CellContext`u], $CellContext`sol], 1]; 
+        ListPlot[{{0, 
+           0}, {$CellContext`l Sin[$CellContext`pu], (-$CellContext`l) 
+            Cos[$CellContext`pu]}}, 
+          PlotRange -> {{-$CellContext`l - 0.1, $CellContext`l + 
+             0.1}, {-$CellContext`l - 0.1, $CellContext`l + 0.1}}, 
+          AspectRatio -> 1, Joined -> True, Mesh -> All, PlotMarkers -> 
+          Style["\[FilledCircle]", 28], PlotStyle -> Red]], 
+      "Specifications" :> {{{$CellContext`u0$$, 0, "Time"}, 0, 20, 
+         0.001}, {{$CellContext`pDot0$$, 6.260990336999411, 
+          "Initial Angual Velocity"}, 6.260890336999411, 6.261090336999411, 
+         1.*^-6}}, "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{405., {249., 254.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{{3.619911806401865*^9, 3.619911812678692*^9}}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{1316, 1188},
-WindowMargins->{{Automatic, -2092}, {Automatic, 24}},
+WindowMargins->{{Automatic, -2392}, {Automatic, 6}},
 FrontEndVersion->"10.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (June 27, \
 2014)",
 StyleDefinitions->"Default.nb"
@@ -557,33 +727,37 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 151, 2, 92, "Title"],
-Cell[734, 26, 346, 8, 28, "Input",
+Cell[580, 22, 203, 3, 92, "Title"],
+Cell[786, 27, 444, 10, 28, "Input",
  InitializationCell->True],
-Cell[1083, 36, 1205, 31, 28, "Input",
+Cell[1233, 39, 1257, 32, 28, "Input",
  InitializationCell->True],
-Cell[2291, 69, 485, 10, 28, "Input",
+Cell[2493, 73, 485, 10, 28, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[2801, 83, 171, 3, 55, "Section"],
+Cell[3003, 87, 171, 3, 55, "Section"],
 Cell[CellGroupData[{
-Cell[2997, 90, 3332, 63, 97, "Input"],
-Cell[6332, 155, 2976, 56, 320, "Output"]
+Cell[3199, 94, 3358, 63, 97, "Input"],
+Cell[6560, 159, 3032, 57, 320, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[9345, 216, 1688, 46, 97, "Input"],
-Cell[11036, 264, 2182, 43, 462, "Output"]
+Cell[9629, 221, 1718, 47, 97, "Input"],
+Cell[11350, 270, 2234, 44, 462, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13255, 312, 2278, 59, 114, "Input"],
-Cell[15536, 373, 2386, 47, 392, "Output"]
+Cell[13621, 319, 3502, 83, 131, "Input"],
+Cell[17126, 404, 2955, 55, 520, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17971, 426, 221, 4, 55, "Section"],
+Cell[20130, 465, 221, 4, 55, "Section"],
 Cell[CellGroupData[{
-Cell[18217, 434, 2009, 47, 80, "Input"],
-Cell[20229, 483, 2730, 53, 316, "Output"]
+Cell[20376, 473, 2060, 48, 80, "Input"],
+Cell[22439, 523, 2786, 54, 316, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[25262, 582, 2671, 71, 131, "Input"],
+Cell[27936, 655, 2669, 51, 520, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
