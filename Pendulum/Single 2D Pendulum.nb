@@ -1,39 +1,26 @@
-(* Content-type: application/vnd.wolfram.cdf.text *)
+(* Content-type: application/vnd.wolfram.mathematica *)
 
-(*** Wolfram CDF File ***)
-(* http://www.wolfram.com/cdf *)
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
 
 (* CreatedBy='Mathematica 10.0' *)
-
-(*************************************************************************)
-(*                                                                       *)
-(*  The Mathematica License under which this file was created prohibits  *)
-(*  restricting third parties in receipt of this file from republishing  *)
-(*  or redistributing it by any means, including but not limited to      *)
-(*  rights management or terms of use, without the express consent of    *)
-(*  Wolfram Research, Inc. For additional information concerning CDF     *)
-(*  licensing and redistribution see:                                    *)
-(*                                                                       *)
-(*        www.wolfram.com/cdf/adopting-cdf/licensing-options.html        *)
-(*                                                                       *)
-(*************************************************************************)
 
 (*CacheID: 234*)
 (* Internal cache information:
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
-NotebookDataPosition[      1064,         20]
-NotebookDataLength[     26274,        653]
-NotebookOptionsPosition[     25799,        613]
-NotebookOutlinePosition[     26157,        629]
-CellTagsIndexPosition[     26114,        626]
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     26397,        654]
+NotebookOptionsPosition[     25019,        601]
+NotebookOutlinePosition[     25377,        617]
+CellTagsIndexPosition[     25334,        614]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 
 Cell[CellGroupData[{
-Cell[TextData[StyleBox["Single 2D Pendulum",
+Cell[TextData[StyleBox["Single 2D Pendulum", "Chapter",
  FontColor->RGBColor[1, 0.5, 0]]], "Title",
  CellChangeTimes->{{3.619480004044711*^9, 3.619480010986821*^9}, {
   3.619910494759737*^9, 3.619910495570051*^9}}],
@@ -318,11 +305,11 @@ Cell[BoxData[
        Hold[$CellContext`pDot0$$], 0, "Initial Anguler Velocity"}, 0, 
       6.260989336999411, 0.001}}, Typeset`size$$ = {360., {105., 109.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`pDot0$4989$$ = 0}, 
+    True, $CellContext`pDot0$7953$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`pDot0$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`pDot0$$, $CellContext`pDot0$4989$$, 0]}, 
+        Hold[$CellContext`pDot0$$, $CellContext`pDot0$7953$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -351,7 +338,8 @@ $CellContext`Single2DPendulum[$CellContext`pDot0$$]},
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.619997057503673*^9, 3.6199971685753193`*^9, 
   3.619997349724917*^9, 3.619997455235283*^9, 3.619998567709835*^9, 
-  3.6199988768898983`*^9, 3.620003465636854*^9, 3.620091553339944*^9}]
+  3.6199988768898983`*^9, 3.620003465636854*^9, 3.620091553339944*^9, 
+  3.620608745403666*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -373,11 +361,11 @@ Cell[BoxData[
        Hold[$CellContext`pDot0$$], 0, "Initial Angual Velocity"}, 0, 
       6.260890336999411, 0.01}}, Typeset`size$$ = {360., {176., 180.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`pDot0$5058$$ = 0}, 
+    True, $CellContext`pDot0$8023$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, "Variables" :> {$CellContext`pDot0$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`pDot0$$, $CellContext`pDot0$5058$$, 0]}, 
+        Hold[$CellContext`pDot0$$, $CellContext`pDot0$8023$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -406,7 +394,7 @@ $CellContext`l}}]],
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.619997815637566*^9, 3.619998574043621*^9, 
-  3.619998877148615*^9, 3.620091553662299*^9}]
+  3.619998877148615*^9, 3.620091553662299*^9, 3.6206087457353773`*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -430,13 +418,13 @@ Cell[BoxData[
        Hold[$CellContext`pDot0$$], 0, "Initial Angual Velocity"}, 0, 
       6.260890336999411, 0.01}}, Typeset`size$$ = {360., {178., 182.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`u0$5118$$ = 0, $CellContext`pDot0$5119$$ = 0}, 
+    True, $CellContext`u0$8079$$ = 0, $CellContext`pDot0$8080$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`pDot0$$ = 0, $CellContext`u0$$ = 0}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`u0$$, $CellContext`u0$5118$$, 0], 
-        Hold[$CellContext`pDot0$$, $CellContext`pDot0$5119$$, 0]}, 
+        Hold[$CellContext`u0$$, $CellContext`u0$8079$$, 0], 
+        Hold[$CellContext`pDot0$$, $CellContext`pDot0$8080$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -469,7 +457,7 @@ $CellContext`u0$$}, $CellContext`pu = Part[
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
   3.619998208739757*^9, {3.619998592017695*^9, 3.619998601964258*^9}, 
-   3.619998877255867*^9, 3.620091553755431*^9}]
+   3.619998877255867*^9, 3.620091553755431*^9, 3.620608745861989*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -505,12 +493,12 @@ Cell[BoxData[
        "Initial Anguler Velocity"}, 6.260890336999411, 6.261090336999411, 
       1.*^-6}}, Typeset`size$$ = {360., {103., 108.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`pDot0$5179$$ = 0}, 
+    True, $CellContext`pDot0$8140$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`pDot0$$ = 6.260990336999411}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`pDot0$$, $CellContext`pDot0$5179$$, 0]}, 
+        Hold[$CellContext`pDot0$$, $CellContext`pDot0$8140$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -540,7 +528,7 @@ $CellContext`Single2DPendulum[$CellContext`pDot0$$]},
  CellChangeTimes->{
   3.619998336738874*^9, 3.6199986317379*^9, 3.619998768065975*^9, 
    3.619998877421776*^9, {3.620003580888939*^9, 3.620003594716489*^9}, 
-   3.6200915539349337`*^9}]
+   3.6200915539349337`*^9, 3.620608745974971*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -567,13 +555,13 @@ Cell[BoxData[
        "Initial Angual Velocity"}, 6.260890336999411, 6.261090336999411, 
       1.*^-6}}, Typeset`size$$ = {360., {178., 182.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`u0$5237$$ = 0, $CellContext`pDot0$5238$$ = 0}, 
+    True, $CellContext`u0$8198$$ = 0, $CellContext`pDot0$8199$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`pDot0$$ = 
         6.260990336999411, $CellContext`u0$$ = 0}, "ControllerVariables" :> {
-        Hold[$CellContext`u0$$, $CellContext`u0$5237$$, 0], 
-        Hold[$CellContext`pDot0$$, $CellContext`pDot0$5238$$, 0]}, 
+        Hold[$CellContext`u0$$, $CellContext`u0$8198$$, 0], 
+        Hold[$CellContext`pDot0$$, $CellContext`pDot0$8199$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -606,7 +594,7 @@ $CellContext`u0$$}, $CellContext`pu = Part[
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.619998802841961*^9, 3.619998877453071*^9, 
-  3.620002262974834*^9, 3.6200915539702253`*^9}]
+  3.620002262974834*^9, 3.6200915539702253`*^9, 3.620608746073752*^9}]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -629,42 +617,42 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[1486, 35, 203, 3, 92, "Title"],
-Cell[1692, 40, 456, 9, 114, "Text"],
-Cell[2151, 51, 641, 14, 46, "Input",
+Cell[580, 22, 214, 3, 80, "Title"],
+Cell[797, 27, 456, 9, 114, "Text"],
+Cell[1256, 38, 641, 14, 46, "Input",
  InitializationCell->True],
-Cell[2795, 67, 1257, 32, 28, "Input",
+Cell[1900, 54, 1257, 32, 28, "Input",
  InitializationCell->True],
-Cell[4055, 101, 2424, 53, 97, "Input",
+Cell[3160, 88, 2424, 53, 97, "Input",
  InitializationCell->True],
-Cell[6482, 156, 2266, 55, 114, "Input",
+Cell[5587, 143, 2266, 55, 114, "Input",
  InitializationCell->True],
-Cell[8751, 213, 3024, 77, 165, "Input",
+Cell[7856, 200, 3024, 77, 165, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[11800, 294, 171, 3, 55, "Section"],
+Cell[10905, 281, 171, 3, 55, "Section"],
 Cell[CellGroupData[{
-Cell[11996, 301, 359, 7, 28, "Input"],
-Cell[12358, 310, 2093, 43, 320, "Output"]
+Cell[11101, 288, 359, 7, 28, "Input"],
+Cell[11463, 297, 2118, 44, 320, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[14488, 358, 233, 5, 28, "Input"],
-Cell[14724, 365, 2159, 43, 462, "Output"]
+Cell[13618, 346, 233, 5, 28, "Input"],
+Cell[13854, 353, 2183, 43, 462, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16920, 413, 263, 6, 46, "Input"],
-Cell[17186, 421, 2603, 50, 494, "Output"]
+Cell[16074, 401, 263, 6, 46, "Input"],
+Cell[16340, 409, 2625, 50, 494, "Output"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19838, 477, 221, 4, 55, "Section"],
+Cell[19014, 465, 221, 4, 55, "Section"],
 Cell[CellGroupData[{
-Cell[20084, 485, 402, 9, 28, "Input"],
-Cell[20489, 496, 2196, 46, 316, "Output"]
+Cell[19260, 473, 402, 9, 28, "Input"],
+Cell[19665, 484, 2218, 46, 316, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[22722, 547, 331, 7, 28, "Input"],
-Cell[23056, 556, 2703, 52, 494, "Output"]
+Cell[21920, 535, 331, 7, 28, "Input"],
+Cell[22254, 544, 2725, 52, 494, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
@@ -673,5 +661,3 @@ Cell[23056, 556, 2703, 52, 494, "Output"]
 *)
 
 (* End of internal cache information *)
-
-(* NotebookSignature jxDJ19pr3t1huDwohYxf3466 *)
