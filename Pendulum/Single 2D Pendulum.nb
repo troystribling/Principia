@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     26397,        654]
-NotebookOptionsPosition[     25019,        601]
-NotebookOutlinePosition[     25377,        617]
-CellTagsIndexPosition[     25334,        614]
+NotebookDataLength[     42997,       1026]
+NotebookOptionsPosition[     40567,        948]
+NotebookOutlinePosition[     40925,        964]
+CellTagsIndexPosition[     40882,        961]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -43,14 +43,16 @@ Cell[BoxData[{
   RowBox[{"g", " ", "=", " ", "9.8"}], ";", " ", 
   RowBox[{"w", " ", "=", " ", 
    RowBox[{"l", "/", "g"}]}], ";"}], "\[IndentingNewLine]", 
- RowBox[{"pc", " ", ":=", " ", 
-  RowBox[{"Sqrt", "[", 
-   RowBox[{"4", " ", 
-    RowBox[{"g", "/", " ", "l"}]}], "]"}]}]}], "Input",
+ RowBox[{
+  RowBox[{"pc", " ", ":=", " ", 
+   RowBox[{"Sqrt", "[", 
+    RowBox[{"4", " ", 
+     RowBox[{"g", "/", " ", "l"}]}], "]"}]}], ";"}]}], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.6196414877487698`*^9, 3.619641488631404*^9}, {
-  3.619910799322654*^9, 3.619910799629002*^9}, {3.619911623143305*^9, 
-  3.619911623328664*^9}, {3.619997250090176*^9, 3.6199972569936867`*^9}}],
+   3.619910799322654*^9, 3.619910799629002*^9}, {3.619911623143305*^9, 
+   3.619911623328664*^9}, {3.619997250090176*^9, 3.6199972569936867`*^9}, 
+   3.620694465885003*^9}],
 
 Cell[BoxData[
  RowBox[{
@@ -339,7 +341,173 @@ $CellContext`Single2DPendulum[$CellContext`pDot0$$]},
  CellChangeTimes->{3.619997057503673*^9, 3.6199971685753193`*^9, 
   3.619997349724917*^9, 3.619997455235283*^9, 3.619998567709835*^9, 
   3.6199988768898983`*^9, 3.620003465636854*^9, 3.620091553339944*^9, 
-  3.620608745403666*^9}]
+  3.620608745403666*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\({\\(Single2DPendulum[0]\\)}\\)\[NoBreak] \
+is neither a list of replacement rules nor a valid dispatch table, and so \
+cannot be used for replacing. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\", ButtonNote -> \
+\\\"ReplaceAll::reps\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6206943163494883`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Plot", "::", "prng"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Value of option PlotRange -> \[NoBreak]\\!\\({\\(\\({0, \
+tmax}\\)\\), \\(\\({\\(\\(-\[Pi]\\)\\), \[Pi]}\\)\\)}\\)\[NoBreak] is not \
+All, Full, Automatic, a positive machine number, or an appropriate list of \
+range specifications. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/Plot\
+\\\", ButtonNote -> \\\"Plot::prng\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694317305126*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Plot", "::", "plln"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Limiting value \[NoBreak]\\!\\(tmax\\)\[NoBreak] in \
+\[NoBreak]\\!\\({t, 0, tmax}\\)\[NoBreak] is not a machine-sized real number. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/plln\\\", \
+ButtonNote -> \\\"Plot::plln\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6206943173618526`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Plot", "::", "prng"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Value of option PlotRange -> \[NoBreak]\\!\\({\\(\\({0, \
+tmax}\\)\\), \\(\\({\\(\\(-\[Pi]\\)\\), \[Pi]}\\)\\)}\\)\[NoBreak] is not \
+All, Full, Automatic, a positive machine number, or an appropriate list of \
+range specifications. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/Plot\
+\\\", ButtonNote -> \\\"Plot::prng\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694317446879*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Plot", "::", "plln"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Limiting value \[NoBreak]\\!\\(tmax\\)\[NoBreak] in \
+\[NoBreak]\\!\\({t, 0, tmax}\\)\[NoBreak] is not a machine-sized real number. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/plln\\\", \
+ButtonNote -> \\\"Plot::plln\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694317493452*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Plot", "::", "prng"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Value of option PlotRange -> \[NoBreak]\\!\\({\\(\\({0, \
+tmax}\\)\\), \\(\\({\\(\\(-\[Pi]\\)\\), \[Pi]}\\)\\)}\\)\[NoBreak] is not \
+All, Full, Automatic, a positive machine number, or an appropriate list of \
+range specifications. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, ButtonData:>\\\"paclet:ref/Plot\
+\\\", ButtonNote -> \\\"Plot::prng\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.62069431757895*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(Plot :: \
+prng\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694317622826*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"Plot", "::", "plln"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Limiting value \[NoBreak]\\!\\(tmax\\)\[NoBreak] in \
+\[NoBreak]\\!\\({t, 0, tmax}\\)\[NoBreak] is not a machine-sized real number. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/plln\\\", \
+ButtonNote -> \\\"Plot::plln\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6206943176688757`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \[NoBreak]\\!\\(\\*StyleBox[\\(Plot :: \
+plln\\), \\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this \
+calculation. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/General/stop\\\", ButtonNote -> \
+\\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694317692515*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\({\\(Single2DPendulum[0]\\)}\\)\[NoBreak] \
+is neither a list of replacement rules nor a valid dispatch table, and so \
+cannot be used for replacing. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\", ButtonNote -> \
+\\\"ReplaceAll::reps\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694450964096*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\({\\(Single2DPendulum[0]\\)}\\)\[NoBreak] \
+is neither a list of replacement rules nor a valid dispatch table, and so \
+cannot be used for replacing. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\", ButtonNote -> \
+\\\"ReplaceAll::reps\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694451022418*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\({\\(Single2DPendulum[0.`]\\)}\\)\[NoBreak] \
+is neither a list of replacement rules nor a valid dispatch table, and so \
+cannot be used for replacing. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\", ButtonNote -> \
+\\\"ReplaceAll::reps\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694451048147*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[\\(ReplaceAll :: reps\\), \\\"MessageName\\\"]\\)\
+\[NoBreak] will be suppressed during this calculation. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/stop\\\", \
+ButtonNote -> \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694451088175*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -359,7 +527,7 @@ Cell[BoxData[
     Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
     "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`pDot0$$], 0, "Initial Angual Velocity"}, 0, 
-      6.260890336999411, 0.01}}, Typeset`size$$ = {360., {176., 180.}}, 
+      6.260890336999411, 0.01}}, Typeset`size$$ = {840., {3., 9.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`pDot0$8023$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
@@ -383,7 +551,7 @@ $CellContext`l}}]],
       "Specifications" :> {{{$CellContext`pDot0$$, 0, 
           "Initial Angual Velocity"}, 0, 6.260890336999411, 0.01}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{405., {220., 225.}},
+     ImageSizeCache->{885., {49., 54.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -394,7 +562,128 @@ $CellContext`l}}]],
    StripOnInput->False],
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{3.619997815637566*^9, 3.619998574043621*^9, 
-  3.619998877148615*^9, 3.620091553662299*^9, 3.6206087457353773`*^9}]
+  3.619998877148615*^9, 3.620091553662299*^9, 3.6206087457353773`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\({\\(Single2DPendulum[0]\\)}\\)\[NoBreak] \
+is neither a list of replacement rules nor a valid dispatch table, and so \
+cannot be used for replacing. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\", ButtonNote -> \
+\\\"ReplaceAll::reps\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694317772937*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"MapThread", "::", "mptd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Object \[NoBreak]\\!\\($Failed\\)\[NoBreak] at position \
+{2, \[NoBreak]\\!\\(1\\)\[NoBreak]} in \[NoBreak]\\!\\(MapThread[\\(\\(\\(\\(\
+\\(\\(Switch[\\(\\(\\(\\({#1, #2, #3}\\)\\), \[IndentingNewLine] \
+\\(\\({\\(\\(_ ? NumericQ\\)\\), Automatic, _}\\)\\), 0, \[IndentingNewLine] \
+\\(\\({_, Automatic, \\\"Domain\\\"}\\)\\), \\(\\(Scaled[0.02`]\\)\\), \
+\[IndentingNewLine] \\(\\({_, Automatic, \\\"Range\\\"}\\)\\), \
+\\(\\(Scaled[0.05`]\\)\\), \[IndentingNewLine] \\(\\({_, _, _}\\)\\), \
+#2\\)\\)]\\)\\) &\\)\\), \\(\\({$Failed, \\(\\({\\(\\({Automatic, \
+Automatic}\\)\\), \\(\\({Automatic, Automatic}\\)\\)}\\)\\), \\(\\({\\(\\({\\\
+\"Range\\\", \\\"Range\\\"}\\)\\), \\(\\({\\\"Range\\\", \
+\\\"Range\\\"}\\)\\)}\\)\\)}\\)\\), 2\\)\\)]\\)\[NoBreak] has only \[NoBreak]\
+\\!\\(0\\)\[NoBreak] of required \[NoBreak]\\!\\(2\\)\[NoBreak] dimensions. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/MapThread/mptd\\\", \
+ButtonNote -> \\\"MapThread::mptd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694317835142*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"MapThread", "::", "mptd"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Object \[NoBreak]\\!\\($Failed\\)\[NoBreak] at position \
+{2, \[NoBreak]\\!\\(1\\)\[NoBreak]} in \[NoBreak]\\!\\(MapThread[\\(\\(\\(\\(\
+\\(\\(Switch[\\(\\(\\(\\({#1, #2, #3}\\)\\), \[IndentingNewLine] \
+\\(\\({\\(\\(_ ? NumericQ\\)\\), Automatic, _}\\)\\), 0, \[IndentingNewLine] \
+\\(\\({_, Automatic, \\\"Domain\\\"}\\)\\), \\(\\(Scaled[0.02`]\\)\\), \
+\[IndentingNewLine] \\(\\({_, Automatic, \\\"Range\\\"}\\)\\), \
+\\(\\(Scaled[0.05`]\\)\\), \[IndentingNewLine] \\(\\({_, _, _}\\)\\), \
+#2\\)\\)]\\)\\) &\\)\\), \\(\\({$Failed, \\(\\({\\(\\({Automatic, \
+Automatic}\\)\\), \\(\\({Automatic, Automatic}\\)\\)}\\)\\), \\(\\({\\(\\({\\\
+\"Range\\\", \\\"Range\\\"}\\)\\), \\(\\({\\\"Range\\\", \
+\\\"Range\\\"}\\)\\)}\\)\\)}\\)\\), 2\\)\\)]\\)\[NoBreak] has only \[NoBreak]\
+\\!\\(0\\)\[NoBreak] of required \[NoBreak]\\!\\(2\\)\[NoBreak] dimensions. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/MapThread/mptd\\\", \
+ButtonNote -> \\\"MapThread::mptd\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694317873987*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ParametricPlot", "::", "plln"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Limiting value \[NoBreak]\\!\\(tmax\\)\[NoBreak] in \
+\[NoBreak]\\!\\({t, 0, tmax}\\)\[NoBreak] is not a machine-sized real number. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/plln\\\", \
+ButtonNote -> \\\"ParametricPlot::plln\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694317922228*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\({\\(Single2DPendulum[0]\\)}\\)\[NoBreak] \
+is neither a list of replacement rules nor a valid dispatch table, and so \
+cannot be used for replacing. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\", ButtonNote -> \
+\\\"ReplaceAll::reps\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694451198863*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\({\\(Single2DPendulum[0]\\)}\\)\[NoBreak] \
+is neither a list of replacement rules nor a valid dispatch table, and so \
+cannot be used for replacing. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\", ButtonNote -> \
+\\\"ReplaceAll::reps\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6206944512604856`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\({\\(Single2DPendulum[0.`]\\)}\\)\[NoBreak] \
+is neither a list of replacement rules nor a valid dispatch table, and so \
+cannot be used for replacing. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\", ButtonNote -> \
+\\\"ReplaceAll::reps\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694451285728*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[\\(ReplaceAll :: reps\\), \\\"MessageName\\\"]\\)\
+\[NoBreak] will be suppressed during this calculation. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/stop\\\", \
+ButtonNote -> \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694451328116*^9}]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -416,7 +705,7 @@ Cell[BoxData[
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{{
        Hold[$CellContext`u0$$], 0, "Time"}, 0, 20, 0.001}, {{
        Hold[$CellContext`pDot0$$], 0, "Initial Angual Velocity"}, 0, 
-      6.260890336999411, 0.01}}, Typeset`size$$ = {360., {178., 182.}}, 
+      6.260890336999411, 0.01}}, Typeset`size$$ = {360., {177., 181.}}, 
     Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
     True, $CellContext`u0$8079$$ = 0, $CellContext`pDot0$8080$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
@@ -445,7 +734,7 @@ $CellContext`u0$$}, $CellContext`pu = Part[
       "Specifications" :> {{{$CellContext`u0$$, 0, "Time"}, 0, 20, 
          0.001}, {{$CellContext`pDot0$$, 0, "Initial Angual Velocity"}, 0, 
          6.260890336999411, 0.01}}, "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{405., {236., 241.}},
+     ImageSizeCache->{405., {235., 240.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -457,7 +746,65 @@ $CellContext`u0$$}, $CellContext`pu = Part[
   Manipulate`InterpretManipulate[1]]], "Output",
  CellChangeTimes->{
   3.619998208739757*^9, {3.619998592017695*^9, 3.619998601964258*^9}, 
-   3.619998877255867*^9, 3.620091553755431*^9, 3.620608745861989*^9}]
+   3.619998877255867*^9, 3.620091553755431*^9, 3.620608745861989*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\({\\(Single2DPendulum[0]\\)}\\)\[NoBreak] \
+is neither a list of replacement rules nor a valid dispatch table, and so \
+cannot be used for replacing. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\", ButtonNote -> \
+\\\"ReplaceAll::reps\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6206943180446987`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ListPlot", "::", "prng"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Value of option PlotRange -> \
+\[NoBreak]\\!\\({\\(\\({\\(\\(\\(\\(-0.1`\\)\\) - l\\)\\), \\(\\(\\(\\(0.1` \
+\[VeryThinSpace]\\)\\) + l\\)\\)}\\)\\), \\(\\({\\(\\(\\(\\(-0.1`\\)\\) - \
+l\\)\\), \\(\\(\\(\\(0.1` \[VeryThinSpace]\\)\\) + l\\)\\)}\\)\\)}\\)\
+\[NoBreak] is not All, Full, Automatic, a positive machine number, or an \
+appropriate list of range specifications. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/ListPlot\\\", ButtonNote -> \
+\\\"ListPlot::prng\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.620694318147643*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ReplaceAll", "::", "reps"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"\[NoBreak]\\!\\({\\(Single2DPendulum[0]\\)}\\)\[NoBreak] \
+is neither a list of replacement rules nor a valid dispatch table, and so \
+cannot be used for replacing. \\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", \
+ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/ReplaceAll/reps\\\", ButtonNote -> \
+\\\"ReplaceAll::reps\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.6206943182669764`*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"ListPlot", "::", "prng"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Value of option PlotRange -> \
+\[NoBreak]\\!\\({\\(\\({\\(\\(\\(\\(-0.1`\\)\\) - l\\)\\), \\(\\(\\(\\(0.1` \
+\[VeryThinSpace]\\)\\) + l\\)\\)}\\)\\), \\(\\({\\(\\(\\(\\(-0.1`\\)\\) - \
+l\\)\\), \\(\\(\\(\\(0.1` \[VeryThinSpace]\\)\\) + l\\)\\)}\\)\\)}\\)\
+\[NoBreak] is not All, Full, Automatic, a positive machine number, or an \
+appropriate list of range specifications. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/ListPlot\\\", ButtonNote -> \
+\\\"ListPlot::prng\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{3.62069431835525*^9}]
 }, Open  ]]
 }, Open  ]],
 
@@ -619,40 +966,65 @@ Notebook[{
 Cell[CellGroupData[{
 Cell[580, 22, 214, 3, 80, "Title"],
 Cell[797, 27, 456, 9, 114, "Text"],
-Cell[1256, 38, 641, 14, 46, "Input",
+Cell[1256, 38, 690, 16, 46, "Input",
  InitializationCell->True],
-Cell[1900, 54, 1257, 32, 28, "Input",
+Cell[1949, 56, 1257, 32, 28, "Input",
  InitializationCell->True],
-Cell[3160, 88, 2424, 53, 97, "Input",
+Cell[3209, 90, 2424, 53, 97, "Input",
  InitializationCell->True],
-Cell[5587, 143, 2266, 55, 114, "Input",
+Cell[5636, 145, 2266, 55, 114, "Input",
  InitializationCell->True],
-Cell[7856, 200, 3024, 77, 165, "Input",
+Cell[7905, 202, 3024, 77, 165, "Input",
  InitializationCell->True],
 Cell[CellGroupData[{
-Cell[10905, 281, 171, 3, 55, "Section"],
+Cell[10954, 283, 171, 3, 55, "Section"],
 Cell[CellGroupData[{
-Cell[11101, 288, 359, 7, 28, "Input"],
-Cell[11463, 297, 2118, 44, 320, "Output"]
+Cell[11150, 290, 359, 7, 28, "Input"],
+Cell[11512, 299, 2118, 44, 320, "Output"],
+Cell[13633, 345, 555, 11, 24, "Message"],
+Cell[14191, 358, 588, 11, 24, "Message"],
+Cell[14782, 371, 507, 10, 24, "Message"],
+Cell[15292, 383, 588, 11, 24, "Message"],
+Cell[15883, 396, 505, 10, 24, "Message"],
+Cell[16391, 408, 587, 11, 24, "Message"],
+Cell[16981, 421, 527, 11, 24, "Message"],
+Cell[17511, 434, 507, 10, 24, "Message"],
+Cell[18021, 446, 527, 11, 24, "Message"],
+Cell[18551, 459, 553, 11, 24, "Message"],
+Cell[19107, 472, 553, 11, 24, "Message"],
+Cell[19663, 485, 555, 11, 24, "Message"],
+Cell[20221, 498, 533, 11, 24, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[13618, 346, 233, 5, 28, "Input"],
-Cell[13854, 353, 2183, 43, 462, "Output"]
+Cell[20791, 514, 233, 5, 28, "Input"],
+Cell[21027, 521, 2177, 43, 120, "Output"],
+Cell[23207, 566, 553, 11, 24, "Message"],
+Cell[23763, 579, 1239, 20, 93, "Message"],
+Cell[25005, 601, 1239, 20, 93, "Message"],
+Cell[26247, 623, 525, 10, 24, "Message"],
+Cell[26775, 635, 553, 11, 24, "Message"],
+Cell[27331, 648, 555, 11, 24, "Message"],
+Cell[27889, 661, 555, 11, 24, "Message"],
+Cell[28447, 674, 533, 11, 24, "Message"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16074, 401, 263, 6, 46, "Input"],
-Cell[16340, 409, 2625, 50, 494, "Output"]
+Cell[29017, 690, 263, 6, 46, "Input"],
+Cell[29283, 698, 2625, 50, 492, "Output"],
+Cell[31911, 750, 555, 11, 24, "Message"],
+Cell[32469, 763, 742, 14, 24, "Message"],
+Cell[33214, 779, 555, 11, 24, "Message"],
+Cell[33772, 792, 741, 14, 24, "Message"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[19014, 465, 221, 4, 55, "Section"],
+Cell[34562, 812, 221, 4, 55, "Section"],
 Cell[CellGroupData[{
-Cell[19260, 473, 402, 9, 28, "Input"],
-Cell[19665, 484, 2218, 46, 316, "Output"]
+Cell[34808, 820, 402, 9, 28, "Input"],
+Cell[35213, 831, 2218, 46, 316, "Output"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[21920, 535, 331, 7, 28, "Input"],
-Cell[22254, 544, 2725, 52, 494, "Output"]
+Cell[37468, 882, 331, 7, 28, "Input"],
+Cell[37802, 891, 2725, 52, 494, "Output"]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
